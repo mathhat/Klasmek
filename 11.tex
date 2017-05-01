@@ -6,7 +6,7 @@
 \usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
 \usepackage{parskip}
 \usepackage[english]{babel} % Language hyphenation and typographical rules
-
+\usepackage{graphicx}
 
 \usepackage{titling} % Customizing the title section
 
@@ -190,4 +190,26 @@ T =& \frac{1}{2}m(\dot r^2 + r^2\dot\phi^2)
 \end{align}
 \clearpage
 \section*{2 Relatively cool circuit}
+Figure \ref{loop} shows a rectangular current loop ABCD. In the loop\rq{}s rest frame, S, the loop has length a in the x direction and width b in the y direction, the current is I and the charge density is zero. We remind you of the following general definitions of the electric dipole moment $\vec p$, and the magnetic dipole moment $\vec m$, for a given current distribution: 
+\begin{equation}
+\vec p = \int \vec r \rho(\vec r) d^3r \label{electric}
+\end{equation}
+\begin{equation}
+\vec m = \frac{1}{2}\int (\vec r \times \vec j(\vec r)) d^3r \label{magnetic}
+\end{equation}
+
+\begin{figure}
+\centering
+\includegraphics{loop}
+\caption{Current loop ABCD of length $a$ and width $b$. Zero charge density.}
+\label{loop}
+\end{figure}
+\section*{2a}
+\begin{itemize}
+\item
+Show that the electric dipole moment is zero in the loop\rq{}s restframe. Show that the magnetic dipole moment is $\vec m = I\vec a \times \vec b$ where $I = j\Delta$. $\Delta $ is the cross sectional area of the conductor. 
+\end{itemize}
+Because our conductor is without charge density in the S frame ($\rho = 0$), the integral in equation \ref{electric}, the electric dipole momentum, equals zero.
+
+In order to determine the magnetic dipole momentum we must express $\vec r \times \vec j$.
 \end{document}
